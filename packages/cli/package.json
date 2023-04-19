@@ -1,0 +1,32 @@
+{
+  "name": "@jadecli/cli",
+  "version": "0.0.0",
+  "description": "jaade cli",
+  "author": "panyushan <1193345664@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "bin": {
+    "jade-cli": "bin/cli.js"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npm.taobao.org/"
+  },
+  "scripts": {
+    "test": "node ./__tests__/cli.test.js"
+  },
+  "dependencies": {
+    "@jadecli/init": "^0.0.0",
+    "commander": "^10.0.1",
+    "import-local": "^3.1.0",
+    "npmlog": "^7.0.1"
+  }
+}
