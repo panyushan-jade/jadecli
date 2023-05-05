@@ -1,0 +1,32 @@
+{
+  "name": "@jadecli/utils",
+  "version": "0.0.0",
+  "description": "jadecli utils",
+  "author": "panyushan <1193345664@qq.com>",
+  "homepage": "https://github.com/panyushan-jade/jadecli#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npm.taobao.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panyushan-jade/jadecli.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/utils.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/panyushan-jade/jadecli/issues"
+  },
+  "dependencies": {
+    "npmlog": "^7.0.1"
+  }
+}

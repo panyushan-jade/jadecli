@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 const importLocal = require('import-local');
-const log = require('npmlog');
+const { log } = require('@jadecli/utils');
 const entry = require('../lib/index');
 
 if(importLocal(__filename)){

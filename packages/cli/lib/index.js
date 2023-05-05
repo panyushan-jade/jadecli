@@ -2,8 +2,10 @@ const commander = require('commander');
 const { program } = commander;
 const pkg = require('../package.json');
 const createInitCommand = require('@jadecli/init')
+const { log } = require('@jadecli/utils');
 
 module.exports = function (args){
+    log.info('version',pkg.version)
     program
         .name(Object.keys(pkg.bin)[0])
         .usage('<command> [options]')
