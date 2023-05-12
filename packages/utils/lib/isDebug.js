@@ -1,3 +1,3 @@
-module.exports = function (){
+export default function (){
     return process.argv.includes('--debug') || process.argv.includes('-d')
 }

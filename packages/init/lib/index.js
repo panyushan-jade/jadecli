@@ -1,5 +1,7 @@
-const Command = require('@jadecli/command');
-const { log } = require('@jadecli/utils');
+// const Command = require('@jadecli/command');
+import Command from '@jadecli/command';
+import { log } from '@jadecli/utils';
+// const { log } = require('@jadecli/utils');
 
 class InitCommand extends Command{
   get command(){
@@ -15,6 +17,11 @@ class InitCommand extends Command{
   }
   action([name,opts]){
     // console.log('init',name,opts);
+    new Promise((resolve,reject) => {
+      resolve()
+    }).then( () => {
+      throw new Error('dada')
+    })
     log.verbose('init',name,opts)
   }
   preAction(){
@@ -26,4 +33,4 @@ function Init(instance){
   return new InitCommand(instance);
 }
 
-module.exports = Init;
+export default Init;
