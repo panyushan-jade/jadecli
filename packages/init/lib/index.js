@@ -17,11 +17,11 @@ class InitCommand extends Command{
   }
   action([name,opts]){
     // console.log('init',name,opts);
-    new Promise((resolve,reject) => {
-      resolve()
-    }).then( () => {
-      throw new Error('dada')
-    })
+    // new Promise((resolve,reject) => {
+    //   resolve()
+    // }).then( () => {
+    //   throw new Error('dada')
+    // })
     log.verbose('init',name,opts)
   }
   preAction(){
